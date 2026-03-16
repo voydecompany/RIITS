@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d2557" />
+
+    <!-- ✅ FIX: Correct preconnect with crossorigin for fonts.gstatic.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ✅ FIX: Non-blocking font load using media="print" trick -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;600;700;800;900&family=DM+Sans:wght@300;400;500;600&display=swap"
+      />
+    </noscript>
+
+    <!-- ✅ FIX: Non-blocking font load for Montserrat + Inter (index.css uses these) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      />
+    </noscript>
+
+    <!-- ✅ SEO: Correct title and meta -->
+    <title>RITS Metal Craft | Metal Fabrication in Trichy – The Art of Metal</title>
+    <meta name="description" content="RITS Metal Craft – Trichy's leading metal fabrication company. Gates, railings, ACP cladding, aluminium glazing & industrial structures. Call 98947 94557." />
+    <meta name="keywords" content="metal fabrication trichy, gate fabricators trichy, RITS metal craft, ACP cladding trichy, building elevation trichy" />
+
+    <!-- ✅ LCP FIX: Preload hero image so it loads faster -->
+    <link
+      rel="preload"
+      as="image"
+      href="/src/assets/heropage/home page hero1.webp"
+      fetchpriority="high"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
